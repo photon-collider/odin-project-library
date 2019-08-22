@@ -3,8 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Library App</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,
+            400i&display=swap" rel="stylesheet">
   </head>
-  <body>
 
+  <body>
+    <h1> Library App</h1>
+    <div id="menu-buttons-container">
+      <button type="button" name="button"
+              class='menu-button' id='add-book-button'></button>
+      <button type="button" name="button"
+              class='menu-button' id='refresh-button'></button>
+    </div>
+
+    <div class="library-container">
+      <div class="book">
+        <div class="top-buttons-container">
+          <button type="button" class='top-button edit-button'></button>
+          <button type="button" class='top-button delete-button'></button>
+        </div>
+
+        <ul class='book-metadata'>
+          <li class='book-title'>Harry Potter and the Half-Blood Prince</li>
+          <li class='book-author'>by J.K. Rowling</li>
+          <li class='book-page-count'>500 pages</li>
+        </ul>
+        <button type="button" name="button"
+                class='read-state-button'>Read</button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src='library.js'></script>
   </body>
 </html>
